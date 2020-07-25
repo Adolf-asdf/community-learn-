@@ -3,6 +3,7 @@ package learn.example.community.controller;
 import learn.example.community.dto.PaginationDTO;
 import learn.example.community.mapper.UserMapper;
 import learn.example.community.model.User;
+import learn.example.community.service.NotificationService;
 import learn.example.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,9 @@ public class ProfileController {
     @Autowired
     private QuestionService questionService;
 
+    @Autowired
+    private NotificationService notificationService;
+
     @GetMapping("/profile/{action}")
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "action") String action,
@@ -35,12 +39,15 @@ public class ProfileController {
         if ("questions".equals(action)){
             model.addAttribute("section","questions");
             model.addAttribute("sectionName","我的提问");
+            PaginationDTO pagination = questionService.list(user.getId(), page, size);
+            model.addAttribute("pagination", pagination);
         }else if ("replies".equals(action)){
+            PaginationDTO pagination = notificationService.list(user.getId(), page, size);
             model.addAttribute("section","replies");
-            model.addAttribute("sectionName","最新回复");;
+            model.addAttribute("pagination", pagination);
+            model.addAttribute("sectionName","最新回复");
         }
-        PaginationDTO pagination = questionService.list(user.getId(), page, size);
-        model.addAttribute("pagination", pagination);
+
         return "profile";
     }
 }

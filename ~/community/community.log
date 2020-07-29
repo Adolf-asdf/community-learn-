@@ -1,0 +1,20 @@
+2020-07-29 07:29:44.894  INFO 2936 --- [restartedMain] l.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-BHGM3HS with PID 2936 (F:\Code\community\target\classes started by hasee in F:\Code\community)
+2020-07-29 07:29:44.898  INFO 2936 --- [restartedMain] l.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-29 07:29:45.077  INFO 2936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-29 07:29:45.077  INFO 2936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-29 07:29:49.204  INFO 2936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-29 07:29:49.250  INFO 2936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-29 07:29:49.251  INFO 2936 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-29 07:29:49.475  INFO 2936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-29 07:29:49.476  INFO 2936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4398 ms
+2020-07-29 07:29:49.573  INFO 2936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-29 07:29:50.064  INFO 2936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-29 07:29:50.073  INFO 2936 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community-learn'
+2020-07-29 07:29:51.287  INFO 2936 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-29 07:29:51.443  INFO 2936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-29 07:29:52.232  INFO 2936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-29 07:29:52.321  INFO 2936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-29 07:29:52.338  INFO 2936 --- [restartedMain] l.e.community.CommunityApplication       : Started CommunityApplication in 8.955 seconds (JVM running for 12.343)
+2020-07-29 07:30:43.822  INFO 2936 --- [Thread-192] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-29 07:30:43.823  INFO 2936 --- [Thread-192] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-29 07:30:43.869  INFO 2936 --- [Thread-192] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
